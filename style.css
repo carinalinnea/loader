@@ -1,0 +1,42 @@
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.one {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #4bbb9f;
+    border-bottom: 2px solid transparent;
+    animation: effectOne 2s ease infinite;
+}
+@keyframes effectOne {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.two {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #27a8b1;
+    border-top: 0.5px solid transparent;
+    animation: effectTwo 2s ease infinite;
+    animation-direction: reverse;
+}
+@keyframes effectTwo {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.three {
+    width: 15px;
+    height: 15px;
+    background: #23767c;
+}
